@@ -1,8 +1,10 @@
 def pawn(x1, y1, x2, y2):
     return y2-y1==1 and abs(x2-x1)==1
 
-def miniKing(x1, y1, x2, y2, is_damka=False):
-    if is_damka:
-        return abs(x2 - x1) == abs(y2 - y1)
-    else:
-        return y2 - y1 == 1 and abs(x2 - x1) == 1
+def damka(x1, y1, x2, y2):
+    ox = abs(x1 - x2)
+    oy = abs(y1 - y2)
+
+    return ox == oy
+
+print(damka(5, 1, 5, 2))
