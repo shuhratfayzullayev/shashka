@@ -8,3 +8,8 @@ def damka(x1, y1, x2, y2):
     return ox == oy
 
 print(damka(5, 1, 5, 2))
+
+
+# git add .
+# git commit -m "message"
+# git push origin master/main
